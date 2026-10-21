@@ -149,7 +149,8 @@ public class Problem2Test {
             for (int j = i + 1; j < n - 1; j++) {
                 for (int k = j + 1; k < n; k++) {
                     double p = pts[i].distance(pts[j]) + pts[j].distance(pts[k]) + pts[k].distance(pts[i]);
-                    if (p < min) min = p;
+                    if (p < min)
+                        min = p;
                 }
             }
         }
